@@ -29,7 +29,7 @@ const signup = async (req, res, next) => {
 
   let existingUser;
   try {
-    const existingUser = await User.findOne({ email: email });
+    existingUser = await User.findOne({ email: email });
   } catch (err) {
     const error = new HttpError(
       "signing up failed, please try again later.",
@@ -71,7 +71,7 @@ const login = async (req, res, next) => {
 
   try {
     existingUser = await User.findOne({ email: email });
-    console.log("existingUser", existingUser)
+    console.log("existingUser", existingUser);
   } catch (err) {
     const error = new HttpError(
       "loggin in failed, please try again later.",
