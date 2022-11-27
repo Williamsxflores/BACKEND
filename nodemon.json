@@ -1,0 +1,8 @@
+{
+    "env":{
+        "DB_USER": "flores",
+        "DB_PASSWORD":"123wfg",
+        "DB_NAME":"mern",
+        "GOOGLE_APIO_KEY":"AIzaSyC6DtoJosK-lFyB8uc3oQmeA5GDPE6dOoM"
+    }
+}
